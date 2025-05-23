@@ -1,8 +1,8 @@
 const imageFilenames = [
-  "image1.jpg",
-  "image2.jpg",
-  "image3.jpg",
-  // Add more image file names here as needed
+  "rock (1).jpg",
+  "rock (2).jpg",
+  "rock (3).jpg",
+  // add more as needed
 ];
 
 const imagePath = "pictures/";
@@ -10,8 +10,13 @@ const imageElement = document.getElementById("randomImage");
 
 function showRandomImage() {
   const randomIndex = Math.floor(Math.random() * imageFilenames.length);
-  imageElement.src = imagePath + imageFilenames[randomIndex];
+  const imageName = encodeURIComponent(imageFilenames[randomIndex]);
+  imageElement.src = imagePath + imageName;
 }
 
-// Load a random image when the page first loads
 window.onload = showRandomImage;
+
+
+
+
+
