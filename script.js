@@ -1,7 +1,7 @@
 const imageFilenames = [
-  "rock (1).jpg",
-  "rock (2).jpg",
-  "rock (3).jpg",
+  "rock (1).JPG",
+  "rock (2).JPG",
+  "rock (3).JPG",
   // add more as needed
 ];
 
