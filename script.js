@@ -1,17 +1,9 @@
-const imageFilenames = [
-  "rock (1).JPG",
-  "rock (2).JPG",
-  "rock (3).JPG",
-  // add more as needed
-];
-
-const imagePath = "pictures/";
+const totalImages = 10; // change this to the total number of rock images you uploaded
 const imageElement = document.getElementById("randomImage");
 
 function showRandomImage() {
-  const randomIndex = Math.floor(Math.random() * imageFilenames.length);
-  const imageName = encodeURIComponent(imageFilenames[randomIndex]);
-  imageElement.src = imagePath + imageName;
+  const randomIndex = Math.floor(Math.random() * totalImages) + 1; // random number from 1 to totalImages
+  imageElement.src = `pictures/rock${randomIndex}.jpg`;
 }
 
 window.onload = showRandomImage;
