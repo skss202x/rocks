@@ -1,5 +1,5 @@
 // Total number of rock images you have (update this if you add more)
-const totalImages = 376; // Example: you have rock1.jpg to rock10.jpg
+const totalImages = 478; // Example: you have rock1.jpg to rock10.jpg
 
 // Folder where images are stored
 const imagePath = "pictures/";
