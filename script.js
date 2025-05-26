@@ -1,5 +1,5 @@
 const totalImages = 10; // Change this to however many images you have
-const imagePath = "pictures/";
+const imagePath = "picture/";
 const imageElement = document.getElementById("randomImage");
 
 function showRandomImage() {
